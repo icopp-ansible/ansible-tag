@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable tag via Homebrew
+  package:
+    name: tag
+    state: latest
+  when: ansible_os_family == "Darwin"
